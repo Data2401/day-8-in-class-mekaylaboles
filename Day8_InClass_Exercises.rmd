@@ -11,7 +11,11 @@ output:nhtml_document
 Make a list that contains the information on a single playing card. Suit, face, and value. 
 
 ```{r}
-
+playing_card = list(
+  suit = "Diamonds",
+  face = "King",
+  value = 13
+)
 
 ```
 
@@ -19,7 +23,11 @@ Make a list that contains the information on a single playing card. Suit, face, 
 Make a second list where each element contains all the options for suit, face, and value, respectively. 
 
 ```{r}
-
+deck = list(
+  suits = c("Heart","Diamond","Spade","Clubs"),
+  faces = c("Ace","Jack","Queen","King"),
+  values = c(Ace = 1, Jack = 11, Queen = 12, King = 13)
+)
 
 ```
 
@@ -28,7 +36,7 @@ If `Newlist <- list(a=1:10, b="Good morning", c="Hi")`, write an R statement tha
 
 ```{r}
 Newlist <- list(a=1:10, b="Good morning", c="Hi")
-
+Newlist[[1]]+1
 
 ```
 
@@ -36,14 +44,16 @@ If `b <- list(a=1:10, c="Hello", d="AA")`, write an R expression that will give 
 
 ```{r}
 b <- list(a=1:10, c="Hello", d="AA")
-
+numbers = b$a[-2]
+number_1 = b$a > 7
+b$a[number_1]
 
 ```
 
 Let `x <- list(a=5:10, c="Hello", d="AA")`, write an R statement to add a new item z = "NewItem" to the list x.
 
 ```{r}
-x <- list(a=5:10, c="Hello", d="AA")
-
-
+x <- list(a=5:10, c="Hello", d="AA") 
+x$z = "NewItem"
+x
 ```
