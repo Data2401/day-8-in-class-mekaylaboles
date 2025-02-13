@@ -2,8 +2,7 @@
 title: "Lists - In Class Exercises"
 author: "Dr. Shoemaker"
 date: "DATA 2401"
-output:nhtml_document
-
+output: html_document
 ---
 
 # Exercises: 
